@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang = "ko">
+<head>
+<meta charset="UTF-8">
+<title>seulleeee</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+    background-color: black;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.wrap {
+		background-color: black;
+	}
+
+	/*header*/
+
+	.header_wrap {
+		padding-left: 180px;
+		padding-right: 180px;
+		padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+		font-size: 10pt;
+	}
+
+	.logo, .menu_content {
+		float: left;
+	}
+
+	.logo {
+		width: 80px;
+		height: auto;
+    opacity: 0.5;
+	}
+
+	.menu {
+		float: right;
+		width: 350px;
+	}
+
+	.menu_content {
+		width: 400px;
+		height: 40px;
+		float: right;
+		font-weight: 100;
+		padding-top: 15px;
+	}
+
+	.about, .team, .work, .blog, .contact {
+		float: left;
+		margin-left: 20px;
+    color: gray;
+	}
+
+	.header_text {
+		text-align: left;
+		margin-top: 100px;
+    color: white;
+	}
+
+	.header_text1 {
+		font-weight: 300;
+    opacity: 0.7;
+	}
+
+	.header_text2 {
+		font-weight: 200;
+    opacity: 0.5;
+	}
+
+
+	/* Main */
+
+
+	.main_wrap {
+		background-color: black;
+		width: 100%;
+		height: 1000px;
+		margin-bottom: 500px;
+	}
+
+	.main_image{
+		padding-left: 180px;
+		padding-right: 180px;
+		margin-top: 100px;
+		background-color: black;
+    opacity: 0.8;
+
+	}
+
+	.subject {
+		color: white;
+		font-size: 30pt;
+		position: relative;
+		z-index: 2;
+		font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+	}
+
+	.explain {
+		color: white;
+		font-size: 12pt;
+		position: relative;
+		z-index: 2;
+		font-family: 'Roboto', sans-serif;
+    opacity: 0.5;
+	}
+
+	.image1_wrap {
+		width: 950px;
+		height: 540px;
+		float: left;
+		background-image: url(img01.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.image1_subject {
+		left: 20px;
+		top: 450px;
+	}
+
+	.image1_explain {
+		left: 20px;
+		top: 450px;
+	}
+
+	.image2_wrap {
+		width: 950px;
+		height: 530px;
+		float: left;
+    margin-top: 20px;
+		background-image: url(img02.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.image2_subject {
+		left: 20px;
+		top: 440px;
+	}
+
+	.image2_explain {
+		left: 20px;
+		top: 440px;
+	}
+
+	.image3_wrap {
+		width: 950px;
+		height: 300px;
+		float: left;
+		margin-top: 20px;
+		background-image: url(img03.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.image3_subject {
+		left: 20px;
+		top: 210px;
+	}
+
+	.image3_explain {
+		left: 20px;
+		top: 210px;
+	}
+
+
+	/* Footer */
+
+
+	.footer_wrap {
+		width: 100%;
+		text-align: left;
+		z-index: -4;
+		font-family: 'Roboto', sans-serif;
+		position: fixed;
+		bottom: 150px;
+    margin-left: 180px;
+	}
+
+	.footer_text1 {
+		font-size: 10pt;
+		color: #E4E4E4;
+    opacity: 0.5;
+	}
+
+	.footer_text2 {
+		font-size: 20pt;
+    color: #E4E4E4;
+    opacity: 0.7;
+
+	}
+
+
+
+	.footer_c {
+		font-size: 8pt;
+		color: #E4E4E4;
+    opacity: 0.3;
+	}
+
+
+	</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+ $(".body").fadeIn(1000);
+
+ $(".about, .team, .work, .blog, .contact").mouseover(function(){
+  $(this).css("color", "black");
+});
+
+  $(".about, .team, .work, .blog, .contact").mouseout(function(){
+   $(this).css("color", "gray");
+});
+})
+
+
+
+	</script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<header>
+		<div class="header_wrap clearfix">
+			<img src="logo2.png" alt="logo" class="logo" id="logo">
+			<div class="menu">
+				<div class="menu_content clearfix">
+					<div class="about">About</div>
+					<div class="team">Team</div>
+					<div class="work">Work</div>
+					<div class="blog">Blog</div>
+					<div class="contact">Contact</div>
+				</div>
+			</div>
+			<br><br><br><br><br>
+			<div class="header_text">
+			<span class="header_text1" style="font-size: 40pt; margin-top: 200px;">Larry Clark</span><br><br>
+			<span class="header_text2" style="font-size: 15pt; margin-top: -50px">The Perfect Childhood, 1991.</span>
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+		<div class="main_wrap">
+      <div class="main_image">
+
+        <div class="image1_wrap">
+					<span class="image1_subject subject">Teenage Lust</span><br>
+					<span class="image1_explain explain">Art direction, Branding</span>
+					<!--<img src="img01.jpg" alt="image1" class="image1">-->
+				</div>
+				<div class="image2_wrap">
+					<span class="image2_subject subject">Another Day in Paradise</span><br>
+					<span class="image2_explain explain">UX design, Photoshop Mockup</span>
+					<!--<img src="img02.jpg" alt="image2" class="image2">-->
+				</div>
+				<div class="image3_wrap">
+					<span class="image3_subject subject">Wassup Rockers</span><br>
+					<span class="image3_explain explain">Web design, Marketing</span>
+					<!--<img src="img03.jpg" alt="image3" class="image3">-->
+
+        </div>
+			</div>
+
+		</div>
+
+
+	</main>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+		<!--<div class="forSpace">
+
+		</div>-->
+	<footer>
+		<div class="footer_wrap">
+			<span class="footer_text1">We provide a full range of digital services.</span><br><hr color="gray"><br>
+			<span class="footer_text2">Are You Ready? <a href="#logo">See More!</a></span>
+			<div class="footer_icons clearfix">
+
+				<br><br><span class="footer_c">© 2017 seulleeee - Creative Agency HTML Template</span>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+</body>
+</html>
